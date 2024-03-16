@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quiz1</string>
+    <string name="ramadhani_herfin_quiz_1">Ramadhani Herfin Quiz 1</string>
+    <string name="masukan_nama_anda">Masukan Nama Anda</string>
+    <string name="tipe_pelannggan">Tipe Pelannggan</string>
+    <string name="masukan_kode_barang">Masukan Kode Barang</string>
+    <string name="order">Order</string>
+    <string name="masukan_jumlah_barang">Masukan Jumlah Barang</string>
+    <string name="regular">Regular</string>
+    <string name="gold">Gold</string>
+    <string name="platinum">Platinum</string>
+</resources>

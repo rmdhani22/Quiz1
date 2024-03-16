@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ramadhani_herfin_quiz_1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="#1084B8"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/namapelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="20dp"
+        android:hint="@string/masukan_nama_anda"
+        android:textColor="#2E2B2B"/>
+
+    <TextView
+        android:id="@+id/tipepelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namapelanggan"
+        android:layout_marginTop="20dp"
+        android:text="@string/tipe_pelannggan"/>
+
+    <RadioGroup
+        android:id="@+id/membergrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipepelanggan"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/btnRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regular"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/btnGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gold"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/btnPlatinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/platinum"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/kodebrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/membergrup"
+        android:hint="@string/masukan_kode_barang"
+        android:textColor="#2E2B2B"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/jmlhbrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kodebrg"
+        android:hint="@string/masukan_jumlah_barang"
+        android:textColor="#2E2B2B"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jmlhbrg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/order"/>
+
+</RelativeLayout>
